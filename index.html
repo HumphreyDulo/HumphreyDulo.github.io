@@ -11,35 +11,38 @@
 
 
 
-/* Your existing styles */
-
-/* Media query for tablets and smaller screens */
-@media only screen and (max-width: 1170px) {
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-    }
-
+/* Styles for mobile */
+@media only screen and (max-width: 600px) {
     .navbar a {
-        margin: 5px 0;
+        float: none;
+        text-align: center;
+        margin: 0;
+        padding: 10px;
     }
 
-    .page-info, .services-container, .container, .stats-container, .projects-container, .contact-container {
-        height:100vh;
-         width: 100vw;
+    .company-name {
+        float: none;
+        margin-left: 0;
+        text-align: center;
     }
 
-    .text-container, .image-container, .image-service, .image-box, .stats-container, .projects-container, .contact-container, .l1, .r1 {
-        width: 100vw;
-         height:100vh;
+    p {
+        font-size: 20px;
+        margin-right: 0;
     }
 
-    .project-slider .project-item {
-        width: 100vw;
-         height:100vh;
+    .search-icon img {
+        float: none;
+        margin-top: 5px;
+        width: 21px;
+        height: 20px;
     }
 
-    /* Add more specific styles for mobile if needed */
+    .p2 {
+        font-size: 12px;
+        margin-left: 0;
+        text-align: center;
+    }
 }
 
 
