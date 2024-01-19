@@ -10,50 +10,106 @@
 
 
 
+/* General styles for larger screens */
+/* Add your existing styles here */
 
-/* Styles for mobile */
-@media only screen and (max-width: 600px) {
-
-
-    
-}
-    .navbar a {
-       float:right;
-        text-align:right;
-        padding: 1px;
+/* Media query for screens with a maximum width of 767px (typical for mobile devices) */
+@media only screen and (max-width: 767px) {
+    .navbar {
+        padding: 5px;
+        margin-bottom: 10px;
     }
 
-    h1{
-  margin: 5px 0 0 0; /* Adjusted margin to move it completely to the left */
-        text-align: left; 
-        float:left;
+    .navbar a {
+        float: none;
+        margin-right: 0;
+        display: block;
+        text-align: center;
+        font-size: 16px;
+        margin-bottom: 5px;
     }
 
     .company-name {
-       
-      text-allign: left;
-        float: left;
-       
+        float: none;
+        margin-left: 0;
+        font-size: 16px;
+    }
+
+    h1 {
+        text-align: left;
     }
 
     p {
-        font-size: 4px;
-       
+        font-size: 20px;
     }
 
     .search-icon img {
         float: none;
         margin-top: 5px;
-        width: 21px;
-        height: 20px;
+        width: 16px;
+        height: 15px;
     }
 
     .p2 {
-        font-size: 2px;
-       
-       
+        margin-left: 0;
+        font-size: 12px;
+    }
+
+    /* Adjust other styles as needed for smaller screens */
+    
+    .page-info {
+        padding: 10px;
+    }
+
+    .left-side {
+        margin-left: 0;
+    }
+
+    .right-side img {
+        border-radius: 0;
+    }
+
+    .horizontal-line {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 70px;
+    }
+
+    .p3 {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .p4 {
+        font-size: 24px;
+        margin-top: 5px;
+        line-height: 1.2;
+    }
+
+    .p6 {
+        font-size: 14px;
+    }
+
+    .p5 {
+        margin-top: 10px;
+    }
+
+    .bordered-button {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .love {
+        font-size: 14px;
+        margin-top: 5px;
+        margin-bottom: 10px;
     }
 }
+
 
 
 
