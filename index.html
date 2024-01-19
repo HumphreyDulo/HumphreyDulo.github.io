@@ -11,38 +11,37 @@
 
 
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
+/* Your existing styles */
 
-
-.page-info, .services-container, .container, .stats-container, .projects-container, .contact-container {
-    flex-direction: column;
-    align-items: center;
-}
-
-.text-container, .image-container, .image-service, .image-box, .stats-container, .projects-container, .contact-container, .l1, .r1 {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    margin-top: 10px;
-}
-
-/* Media query for smaller screens */
-@media only screen and (max-width: 768px) {
+/* Media query for tablets and smaller screens */
+@media only screen and (max-width: 1170px) {
     .navbar {
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
     }
 
     .navbar a {
-        flex: 1 0 100%;
-        text-align: center;
-        margin-bottom: 10px;
+        margin: 5px 0;
     }
 
+    .page-info, .services-container, .container, .stats-container, .projects-container, .contact-container {
+        height:100vh;
+         width: 100vw;
+    }
+
+    .text-container, .image-container, .image-service, .image-box, .stats-container, .projects-container, .contact-container, .l1, .r1 {
+        width: 100vw;
+         height:100vh;
+    }
+
+    .project-slider .project-item {
+        width: 100vw;
+         height:100vh;
+    }
+
+    /* Add more specific styles for mobile if needed */
 }
+
 
 
 
