@@ -1,1702 +1,621 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaaS Website</title>
 
-    <title>Creatic</title>
     <style>
-        @media only screen and (max-width: 500px) {
-
-
-            body {
-                margin: 0;
-                font-family: 'poppins', sans-serif;
-                background-color: #000000;
-            }
-
-            p {
-                margin: 0;
-                font-size: 21px;
-                margin-right: 13px;
-                color: #6d95fc;
-                font-family: 'poppins', sans-serif;
-            }
-
-            .navbar {
-                background-color: #000000;
-                overflow: hidden;
-                padding: 11px;
-                color: white;
-            }
-
-            .p2 {
-                margin: 0;
-                font-size: 22px;
-                margin-right: 13px;
-                color: #6d95fc;
-                font-family: 'poppins', sans-serif;
-            }
-
-            .p2 {
-                margin: 0;
-                font-size: 10px;
-                margin-left: 3px;
-                color: white;
-                font-family: 'poppins', sans-serif;
-            }
-
-            .navbar a {
-                float: right;
-                margin-right: 14px;
-                color: white;
-                text-align: center;
-                text-decoration: none;
-                font-size: 7px;
-            }
-
-            .search-icon img {
-                float: right;
-                margin-top: -6px;
-                width: 19px;
-                height: 19px;
-            }
-
-            img {
-                max-width: 100%;
-                object-fit: cover;
-                display: block;
-            }
-
-            .page-info {
-                display: flex;
-                padding-left: 90px;
-                background-color: #000000;
-                margin-top: 50px;
-                margin-bottom: 100px;
-            }
-
-            .left-side {
-                padding-right: 20px;
-                float: left;
-                margin-left: -84px;
-                font-size: 1px;
-                background-color: #000000;
-
-            }
-
-            .p3 {
-                color: white;
-                font-size: 7px;
-                margin-top: 15px;
-            }
-
-            .p4 {
-                color: white;
-                font-size: 10px;
-                margin-top: 20px;
-                line-height: 0.8;
-            }
-
-            .horizontal-line {
-                margin-top: 8px;
-                margin-bottom: -2px;
-                width: 100px;
-                display: inline-block;
-                color: #6d95fc;
-                border-bottom: 4px solid #6d95fc;
-            }
-
-            .p6 {
-                color: white;
-                font-size: 7;
-            }
-
-            .p5 {
-                margin-top: 20px;
-            }
-
-            .right-side {
-                flex: 1;
-            }
-
-            .right-side img {
-                width: 100%;
-                height: auto;
-            }
-
-            .bordered-button {
-                border: 4px solid #6d95fc;
-                background-color: #000000;
-                color: white;
-
-            }
-
-            .services-container {
-                display: flex;
-                background-color: #000000;
-                height: 32vh;
-                margin-top: 100px;
-                margin-bottom: 100px;
-            }
-
-            .image-container {
-                flex: 1;
-                padding-bottom: 20px;
-            }
-
-            .text-container {
-                flex: 1;
-                height: 100vh;
-                box-sizing: border-box;
-            }
-
-            .love {
-                color: white;
-                font-size: 13px;
-                margin-top: 10px;
-                margin-bottom: 20PX;
-            }
-
-            .container {
-                flex: 1;
-                display: flex;
-                background-color: #000000;
-                margin-top: 100px;
-                
-            }
-
-            .ps {
-                font-size: 14px;
-            }
-
-            .image-service {
-                flex: 1;
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                gap: 1px;
-                box-sizing: border-box;
-            }
-
-            .image-box {
-                text-align: center;
-                max-width: 53px;
-            }
-
-            .description {
-                font-size: 8px;
-            }
-
-            .image-box {
-                text-align: center;
-                max-width: 53px;
-            }
-
-            .stats-container {
-                max-width: 100%;
-                text-align: center;
-                background-color: #000000;
-                padding-bottom: 60px;
-            }
-
-            .projects-container {
-                max-width: 100%;
-                text-align: center;
-                box-sizing: border-box;
-                background-color: #000000;
-            }
-
-            .project-text {
-                text-align: center;
-                position: relative;
-                background-color: #000000;
-                margin-bottom: 100px;
-            }
-
-            .work {
-                font-size: 13px;
-                margin-left: 10px;
-                margin-top: 30px;
-                margin-bottom: 30px;
-            }
-
-            .horizontal {
-                width: 60px;
-                display: inline-block;
-                color: white;
-                margin-top: 2px;
-                margin-bottom: 1.5px;
-            }
-
-            .project-slider {
-                width: 100%;
-                overflow: hidden;
-                margin-left: 0px;
-                display: flex;
-                flex-direction: row;
-                position: relative;
-                justify-content: center;
-                background-color: #000;
-                animation: scroll 10s linear infinite;
-            }
-
-            .navigation-indicator {
-                display: flex;
-                justify-content: center;
-                margin-top: 1px;
-                background-color: #000;
-                align-items: center;
-            }
-
-            .project-item2 {
-                flex-shrink: 0;
-                background-color: #000;
-                margin-top: 100px;
-                margin-left: 20px;
-                margin-right: 20px;
-            }
-
-            .project-image {
-                width: 137px;
-                height: 312px;
-                object-fit: cover;
-                transition: transform 0.3s ease;
-                margin-bottom: 200px;
-                border-radius: 2px;
-            }
-
-            .project-item {
-                flex-shrink: 0;
-                background-color: #000;
-                margin-top: 100px;
-                margin-left: 20px;
-                margin-right: 20px;
-            }
-
-            .project-item3 {
-                flex-shrink: 0;
-                background-color: #000;
-                margin-top: 100px;
-                margin-left: 20px;
-                margin-right: 20px;
-            }
-
-            .indicator {
-                width: 9px;
-                height: 9px;
-                background-color: white;
-                margin: 0 6px;
-            }
-
-            .why {
-                display: flex;
-                width: 100%;
-                background-color: #000000;
-                height: 25vh;
-                margin-top: 100px;
-                margin-bottom: 100px;
-            }
-
-            .left- {
-                flex: 1;
-                float: left;
-                margin-left: 57px;
-                font-size: 1px;
-                background-color: #000000;
-                width: 100vw;
-                overflow-y: auto;
-                white-space: nowrap;
-            }
-
-            .horizontal3 {
-                margin-top: 5px;
-                margin-bottom: 10px;
-                width: 100px;
-                display: inline-block;
-                color: white;
-            }
-
-            .right- {
-                flex: 1;
-                margin-top: 60px;
-            }
-
-            .containers {
-                width: 100vw;
-                display: flex;
-                background-color: #000;
-            }
-
-            .one {
-                flex: 1;
-                box-sizing: border-box;
-                background-color: #000000;
-                margin: 20px;
-            }
-
-            .two {
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-start;
-                align-items: center;
-            }
-
-            .mid-text {
-                color: white;
-                text-align: center;
-                font-size: 11px;
-                margin: 2px 0;
-            }
-
-            .bar {
-                margin-top: 5px;
-                margin-bottom: 10px;
-                width: 200px;
-                display: inline-block;
-                align-items: center;
-                color: #6d95fc;
-                border-bottom: 3px solid #6d95fc;
-            }
-
-            .mony {
-                font-size: 10px;
-            }
-
-            .image-space {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 71%;
-                width: 134%;
-            }
-
-            .p5 {
-                margin-top: 1px;
-            }
-
-            .three {
-                flex: 1;
-                box-sizing: border-box;
-                background-color: #000000;
-                margin: 20px;
-            }
-
-            .two {
-                flex: 1;
-                box-sizing: border-box;
-                background-color: #000000;
-                margin: 11px;
-            }
-
-            .contact-container {
-                display: flex;
-                justify-content: space-between;
-                background-color: #000000;
-                color: white;
-                padding-left: 40px;
-            }
-
-            .l1 {
-                flex: 1;
-                padding-right: 20px;
-                background-color: #000000;
-                text-align: "justify";
-                margin-top: 150px;
-            }
-
-            .horizontal-line {
-                margin-top: 8px;
-                margin-bottom: -2px;
-                width: 100px;
-                display: inline-block;
-                color: #6d95fc;
-                border-bottom: 4px solid #6d95fc;
-            }
-
-            .contact-info {
-                margin-top: 40px;
-            }
-
-            .div-contact {
-                display: flex;
-                align-items: center;
-                margin-bottom: 20px;
-            }
-
-            .contact-image {
-                width: 24px;
-                height: auto;
-                margin-top: 10px;
-            }
-
-            .pt2 {
-                color: white;
-                font-size: 12px;
-                margin-left: 40px;
-            }
-
-            .pt {
-                color: #6d95fc;
-                font-size: 5px;
-                margin-left: 40px;
-            }
-
-            .link {
-                text-decoration: none;
-                color: #6d95fc;
-                font-size: 10px;
-            }
-
-            .r1 {
-                flex: 1;
-                background: linear-gradient(to bottom, #101828, #000000);
-                border-radius: 10px;
-                margin-top: 150px;
-                margin-right: 50px;
-            }
-
-            form {
-                display: flex;
-                flex-direction: column;
-                padding: 16px;
-                border-radius: 10px;
-                margin-top: 20px;
-                margin-right: 1px;
-                background-color: transparent;
-                font-family: 'poppins', sans-serif;
-            }
-
-            label {
-                color: white;
-                margin-bottom: 20px;
-                margin-top: 0px;
-            }
-
-            input[type="text"] {
-                width: 70%;
-                padding: 10px;
-                margin-bottom: 10px;
-                box-sizing: border-box;
-                background-color: transparent;
-                border: 1px solid white;
-                font-family: 'poppins', sans-serif;
-            }
-
-            input[type="email"] {
-                width: 70%;
-                padding: 10px;
-                margin-bottom: 10px;
-                box-sizing: border-box;
-                background-color: transparent;
-                border: 1px solid white;
-                font-family: 'poppins', sans-serif;
-            }
-
-            textarea {
-                resize: vertical;
-                font-family: 'poppins', sans-serif;
-                background-color: transparent;
-            }
-
-            .bordered-button3 {
-                padding: 3px 15px;
-                background-color: #6d95fc;
-                border: 1px solid black;
-                color: #101828;
-                margin-left: 29px;
-
-            }
-
-            .footer-content {
-                max-width: 1200px;
-                margin: 0px auto;
-            }
-
-            footer {
-                background: linear-gradient(to bottom, #000000, #080a12);
-                color: white;
-                padding: 20px 0;
-                text-align: center;
-            }
-
-            .footer-text1 {
-                margin-top: 250px;
-                font-size: 16px;
-                margin-right: 13px;
-                color: #6d95fc;
-                font-family: 'poppins', sans-serif;
-            }
-
-            .footer-text2 {
-                margin-bottom: 10px;
-                font-size: 8px;
-                margin-right: 13px;
-                color: white;
-                font-family: 'poppins', sans-serif;
-            }
-
-            .footer-text3 {
-                margin-bottom: 40px;
-                font-size: 12px;
-                margin-right: 13px;
-                color: #6d95fc;
-                font-family: 'poppins', sans-serif;
-            }
-
-            .footer-text4 {
-                font-size: 10px;
-                margin-right: 13px;
-                color: white;
-                font-family: 'poppins', sans-serif;
-            }
-
-            .footer-text5 {
-                margin-bottom: 50px;
-                font-size: 11px;
-                margin-right: 13px;
-                color: white;
-                font-family: 'poppins', sans-serif;
-            }
-
-            .logo-container {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-bottom: 75px;
-            }
-
-            .logo-container img {
-                max-width: 100px;
-                margin: 0px -4px;
-            }
-
-            .footer-text6 {
-                margin: 0;
-                font-size: 10px;
-                margin-right: 13px;
-                color: white;
-                font-family: 'poppins', sans-serif;
-            }
-
-            span {
-
-                color: #6d95fc;
-            }
-
-            .bordered-button2 {
-                border: 4px solid #6d95fc;
-                padding: 10px 15px;
-                background-color: #000000;
-                color: white;
-
-            }
+        body {
+            margin: 0;
+            font-family: 'Traction', sans-serif;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #ffffff;
+            width: 1440px;
+            height: 56px;
+        }
+
+        .hed {
+
+            margin-left: 200px;
+            font-size: 30px;
+            color: #333;
+
+        }
+
+        nav {
+            text-align: center;
+
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-left: 20px;
+
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+
+            font-size: 16px;
+        }
+
+        .button {
+
+            background-color: black;
+            color: white;
+            border: 15px solid black;
+        }
+
+        .landing {
+            padding: 20px;
+            background-color: black;
+            text-align: center;
+            color: white;
+
+        }
+
+        .ending {
+            padding: 20px;
+            background-color: black;
+            text-align: center;
+            color: white;
+            height: 280px;
+
+        }
+
+        .p2 {
+            text-align: center;
+            margin: 0px 0px;
+            font-weight: lighter;
+            font-size: 17px;
+        }
+
+        h2 {
+            margin-bottom: 0px;
+            margin-top: 0px;
+            font-weight: bold;
+            font-size: 40px;
+        }
+
+        .landing-text {
+            margin-bottom: 10px;
+
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .button-call {
+            display: flex;
+            justify-content: left;
+            margin-bottom: 20px;
+        }
+
+        .landing-button1 {
+            margin-right: 15px;
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border: 1px solid white;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .button-landing {
+            margin-top: 30px;
+        }
+
+        .landing-button2 {
+            margin-right: 10px;
+            background-color: white;
+            color: black;
+            padding: 10px 20px;
+            border: 1px solid white;
+            border-radius: 50px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .landing-button2b {
+            margin-right: 10px;
+            background-color: white;
+            color: black;
+            padding: 10px 20px;
+            border: 1px solid black;
+            border-radius: 50px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .central-image {
+            text-align: center;
+
+            height: 486px;
+        }
+
+        .central-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .tag {
+            background-color: #ffffff;
+            text-align: center;
+
+        }
+
+        .tag img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        .service {
+            background-color: #ffffff;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 50px 50px;
+
+        }
+
+        .service-item {
+            text-align: left;
+            margin-right: 0px;
+            margin-left: 200px;
+        }
+
+        .service-icon img {
+            max-width: 50px;
+            max-height: 50px;
+            margin-bottom: 10px;
+        }
+
+        .icon-text1 {}
+
+        .icon-text2 {}
+
+
+        .text-image-container {
+            display: flex;
+            align-items: center;
+            margin: 20px;
+            /* Adjust margin as needed */
+        }
+
+        .text-image-container .text {
+            flex: 1;
+            margin-left: 200px;
+            /* Adjust padding as needed */
+        }
+
+        .text-image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-right: 100px;
+        }
+
+        .image-text-container {
+            background-color: black;
+            display: flex;
+            align-items: center;
+            /* Adjust margin as needed */
+            width: 100vw;
+            height: 700px;
+        }
+
+        .image-text-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-left: 200px;
+            margin-right: 80px;
+        }
+
+        .image-text-container h2 {
+            flex: 1;
+
+            color: white;
+            font-weight: bold;
+        }
+
+        .image-text-container .p3 {
+            flex: 1;
+
+            /* Adjust padding as needed */
+            color: white;
+            font-weight: lighter;
+        }
+
+        .footer {
+            Color: #333;
+
+            padding: 80px 100px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            /* 5 columns with equal width */
+            gap: 20px;
+            /* Adjust the gap between columns as needed */
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            /* 5 columns with equal width */
+            gap: 20px;
+            /* Adjust the gap between columns as needed */
+        }
+
+        .grid-item {
+
+            text-align: left;
+        }
+
+        .grid-item li {
+            margin-bottom: 5px;
+            text-align: left;
+            width: fit-content;
+            padding-right: 10px;
+            padding-left: 0px;
+        }
+
+        .grid-item ul {
+            margin-top: 50px;
+            list-style: none;
+            text-align: left;
+            padding: 10px;
+        }
+
+        li a {
+            text-decoration: none;
+            color: #333;
+
+            text-align: left;
         }
 
 
-/*LAPTOPS AND BIGGER SCREENS*/
-
-        @media only screen and (min-width: 600px) {
-
-
-            /* Styles for the navbar */
-            body {
-                margin: 0;
-                font-family: 'poppins', sans-serif;
-                background-color: #000000;
-            }
-
-            .navbar {
-                background-color: #000000;
-                overflow: hidden;
-                padding: 10px;
-                color: white;
-            }
-
-            .navbar a {
-                float: right;
-                margin-right: 50px;
-                display: block;
-                color: white;
-                text-align: center;
-                padding: 10px 1px;
-                text-decoration: none;
-                font-size: 20px;
-            }
-
-            .company-name {
-                float: left;
-                margin-left: 200px;
-                padding: 5px;
-                font-size: 6px;
-                font-family: 'poppins', sans-serif;
-            }
-
-            h1 {
-                margin: 5px 0;
-            }
-
-            p {
-                margin: 0;
-                font-size: 35px;
-                margin-right: 13px;
-                color: #6d95fc;
-                font-family: 'poppins', sans-serif;
-
-            }
-
-            .search-icon img {
-                float: right;
-                margin-top: 5px;
-                width: 21px;
-                height: 20px;
-            }
-
-            .p2 {
-                margin: 0;
-                font-size: 10px;
-                margin-left: 22px;
-                color: white;
-                font-family: 'poppins', sans-serif;
-            }
-
-            /* Styles for the page information division */
-            .page-info {
-                display: flex;
-                padding-left: 100px;
-                background-color: #000000;
-            }
-
-            .left-side {
-                flex: 1;
-                padding-right: 20px;
-                float: left;
-                margin-left: 100px;
-                padding: 5px;
-                font-size: 1px;
-                background-color: #000000;
-                text-align: "justify";
-            }
-
-            .left-side p {
-                margin-bottom: 10px;
-                font-family: 'poppins', sans-serif;
-                text-align: "justify";
-            }
-
-            .right-side {
-                flex: 1;
-            }
-
-            .right-side img {
-                width: 100%;
-                height: auto;
-
-
-            }
-
-            .horizontal-line {
-
-                margin-top: 20px;
-                margin-bottom: 20px;
-                width: 100px;
-                display: inline-block;
-                color: #6d95fc;
-                border-bottom: 4px solid #6d95fc;
-
-            }
-
-            span {
-                color: #6d95fc;
-
-
-            }
-
-            .p3 {
-                color: white;
-                font-size: 20px;
-                margin-top: 100px;
-            }
-
-            .p4 {
-                color: white;
-                font-size: 45px;
-                margin-top: 20px;
-                line-height: 0.8;
-
-            }
-
-            .p6 {
-                color: white;
-                font-size: 18px;
-            }
-
-            .p5 {
-                margin-top: 20px;
-            }
-
-            .bordered-button {
-                border: 4px solid #6d95fc;
-                padding: 10px 15px;
-                background-color: #000000;
-                color: white;
-                margin-top: 20px;
-            }
-
-            /* About us */
-            .container {
-                flex: 1;
-                display: flex;
-                background-color: #000000;
-
-
-            }
-
-            .image-container {
-                flex: 1;
-                padding-bottom: 20px;
-            }
-
-            .text-container {
-                flex: 1;
-
-                box-sizing: border-box;
-
-            }
-
-            img {
-                width: 100%;
-                height: auto;
-                border-radius: 8px;
-
-            }
-
-            .love {
-                color: white;
-                font-size: 16px;
-                margin-top: 10px;
-                margin-bottom: 20PX;
-            }
-
-            /* Services div */
-
-            .services-container {
-
-                display: flex;
-                background-color: #000000;
-                height: 100vh;
-
-
-            }
-
-            .text-container {
-                flex: 1;
-                height: 100vh;
-                box-sizing: border-box;
-                margin-left: 200px;
-            }
-
-            .image-service {
-                flex: 1;
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                gap: 1px;
-
-                box-sizing: border-box;
-
-
-            }
-
-            .image-box {
-                box-sizing: border-box;
-                text-align: center;
-                max-width: 300px;
-                max-height: 50px;
-
-
-            }
-
-            img {
-                max-width: 100%;
-                height: auto;
-                object-fit: cover;
-                display: block;
-
-            }
-
-            .description {
-                font-size: 12px;
-            }
-
-            .ps {
-                font-size: 20px;
-            }
-
-            /* stats */
-            .stats-container {
-                max-width: 100%;
-                text-align: center;
-                background-color: #000000;
-                padding-bottom: 60px;
-            }
-
-            .stats-image {
-                max-height: 500px;
-                width: auto;
-                display: block;
-                margin: 0 auto;
-
-
-            }
-
-            /*projects sliding*/
-            .projects-container {
-                max-width: 100%;
-                text-align: center;
-                box-sizing: border-box;
-                background-color: #000000;
-
-            }
-
-            .project-slider {
-                width: 100%;
-                overflow: hidden;
-                margin-left: 0px;
-                display: flex;
-                flex-direction: row;
-                position: relative;
-                justify-content: center;
-                background-color: #000;
-                animation: scroll 10s linear infinite;
-
-            }
-
-            .project-slider .project-item .project-item2 .project-item3 {
-                display: flex;
-                width: 33.33%;
-                animation: carousel 12s linear infinite;
-                justify-content: center;
-                align-items: center;
-            }
-
-            .project-item {
-                flex-shrink: 0;
-                background-color: #000;
-                margin-top: 100px;
-                margin-left: 20px;
-                margin-right: 20px;
-            }
-
-            .project-item2 {
-                flex-shrink: 0;
-                background-color: #000;
-                margin-top: 100px;
-                margin-left: 20px;
-                margin-right: 20px;
-            }
-
-            .project-item3 {
-                flex-shrink: 0;
-                background-color: #000;
-                margin-top: 100px;
-                margin-left: 20px;
-                margin-right: 20px;
-            }
-
-            .project-image {
-                width: 480px;
-                height: 450px;
-                object-fit: cover;
-                transition: transform 0.3s ease;
-                margin-bottom: 200px;
-                border-radius: 2px;
-            }
-
-
-            .project-slider:hover {
-                animation-play-state: paused;
-            }
-
-            .project-slider:hover {
-                animation-play-state: paused;
-            }
-
-            .project-slider:hover .project-item {
-                animation-play-state: paused;
-            }
-
-            .project-slider:hover .project-item2 {
-                animation-play-state: paused;
-            }
-
-            .project-slider:hover .project-item3 {
-                animation-play-state: paused;
-            }
-
-            .project-slider .project-item {
-                animation-play-state: running;
-            }
-
-            .project-slider .project-item2 {
-                animation: carousel1 12s linear infinite;
-            }
-
-            .project-slider .project-item {
-                animation: carousel2 12s linear infinite;
-            }
-
-            .project-slider .project-item3 {
-                animation: carousel3 12s linear infinite;
-            }
-
-            .project-item:hover .project-image {
-                transform: scale(1.2);
-            }
-
-            .project-item2:hover .project-image {
-                transform: scale(1.2);
-            }
-
-            .project-item3:hover .project-image {
-                transform: scale(1.2);
-            }
-
-
-
-            .project-text {
-                text-align: center;
-                position: relative;
-                background-color: #000000;
-                margin-bottom: 100px;
-            }
-
-            .project-text p {
-
-                padding: 0;
-            }
-
-            .p0 {
-                font-size: 30px;
-                color: white;
-
-            }
-
-
-            .work {
-                font-size: 13px;
-                margin-left: 10px;
-                margin-top: 30px;
-                margin-bottom: 30px;
-            }
-
-            .horizontal {
-
-                width: 60px;
-                display: inline-block;
-                color: white;
-                margin-top: 2px;
-                margin-bottom: 1.5px;
-
-            }
-
-            .horizontal3 {
-
-                margin-top: 5px;
-                margin-bottom: 10px;
-                width: 100px;
-                display: inline-block;
-                color: white;
-
-
-            }
-
-            .navigation-indicator {
-                display: flex;
-                justify-content: center;
-                margin-top: 10px;
-                margin-right: 100px;
-                background-color: #000;
-                align-items: center;
-            }
-
-            .indicator {
-                width: 20px;
-                height: 20px;
-                background-color: white;
-
-                margin: 0 6px;
-
-            }
-
-
-            /* why us? */
-            .why {
-                display: flex;
-                width: 100%;
-                background-color: #000000;
-                height: 100vh;
-                margin-top: 100px;
-            }
-
-            .left- {
-                flex: 1;
-                margin-right: 10px;
-                float: left;
-                margin-left: 200px;
-                font-size: 1px;
-                background-color: #000000;
-                width: 100vw;
-                overflow-y: auto;
-                white-space: nowrap;
-            }
-
-            .right- {
-                flex: 1;
-                margin-top: 164px;
-
-            }
-
-            /* Penultimate page*/
-            .containers {
-                width: 100vw;
-                display: flex;
-                height: 100vh;
-
-                background-color: #000;
-            }
-
-            .one,
-            .two,
-            .three {
-                flex: 1;
-                box-sizing: border-box;
-                background-color: #000000;
-                margin: 20px;
-
-            }
-
-            .two {
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-start;
-                align-items: center;
-
-            }
-
-            .mid-text {
-                color: white;
-                text-align: center;
-                font-size: 45px;
-                margin: 10px 0;
-            }
-
-            .image-space {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 60%;
-                width: 100%;
-
-            }
-
-            .center-image {
-                max-width: 100%;
-                max-height: 100%;
-                width: auto;
-                height: auto;
-                object-fit: contain;
-
-            }
-
-            .project-images {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-
-            }
-
-            .bar {
-
-                margin-top: 10px;
-                margin-bottom: 20px;
-                width: 200px;
-                display: inline-block;
-                align-items: center;
-                color: #6d95fc;
-                border-bottom: 3px solid #6d95fc;
-
-            }
-
-            .mony {
-
-                font-size: 20px;
-
-            }
-
-            .bordered-button2 {
-                border: 4px solid #6d95fc;
-                padding: 10px 15px;
-                background-color: #000000;
-                color: white;
-
-            }
-
-            /*contact us*/
-            .contact-container {
-                display: flex;
-                height: 100vh;
-                display: flex;
-                padding-left: 100px;
-                background-color: #000000;
-            }
-
-            .contact-info {
-                margin-top: 40px;
-            }
-
-
-
-            .contact-image {
-                width: 70px;
-                height: auto;
-                margin-top: 10px;
-
-            }
-
-            form {
-                display: flex;
-                flex-direction: column;
-                padding: 20px;
-                border-radius: 10px;
-                margin-top: 20px;
-                margin-right: 10px;
-                background-color: transparent;
-                font-family: 'poppins', sans-serif;
-
-            }
-
-            label {
-                color: white;
-                margin-bottom: 20px;
-                margin-top: 0px;
-            }
-
-            input[type="text"],
-            input[type="email"],
-            textarea {
-                width: 70%;
-                padding: 10px;
-                margin-bottom: 10px;
-                box-sizing: border-box;
-                background-color: transparent;
-                border: 1px solid white;
-                color: white;
-
-            }
-
-            input[type="message"],
-            textarea {
-                height: 200px;
-            }
-
-            textarea {
-                resize: vertical;
-
-            }
-
-            .link {
-                color: #6d95fc;
-                text-decoration: none;
-                background-color: transparent;
-                font-size: 15px;
-            }
-
-            .link:hover {
-                text-decoration: none;
-            }
-
-            .pt {
-                color: #6d95fc;
-                font-size: 30px;
-                margin-left: 40px;
-            }
-
-            .pt2 {
-                color: white;
-                font-size: 30px;
-                margin-left: 40px;
-
-            }
-
-            .div-contact {
-                margin-top: 0px;
-            }
-
-
-            .contact-container {
-                display: flex;
-                justify-content: space-between;
-                background-color: #000000;
-                color: white;
-                padding-left: 100px;
-            }
-
-            .div-contact {
-                display: flex;
-                align-items: center;
-                margin-bottom: 20px;
-            }
-
-            .link {
-                text-decoration: none;
-                color: #6d95fc
-            }
-
-            label {
-                color: white;
-                margin-bottom: 20px;
-                margin-top: 0px;
-            }
-
-            input[type="text"],
-            input[type="email"],
-            textarea {
-                width: 70%;
-                padding: 10px;
-                margin-bottom: 10px;
-                box-sizing: border-box;
-                background-color: transparent;
-                border: 1px solid white;
-                font-family: 'poppins', sans-serif;
-            }
-
-            input[type="message"],
-            textarea {
-                height: 200px;
-                font-family: 'poppins', sans-serif;
-            }
-
-            textarea {
-                resize: vertical;
-                font-family: 'poppins', sans-serif;
-            }
-
-            .info-item {
-                display: flex;
-                align-items: center;
-                margin-bottom: 15px;
-            }
-
-            .info-title {
-                font-weight: bold;
-                margin: 0;
-            }
-
-
-
-            .l1 {
-                flex: 1;
-                padding-right: 20px;
-                margin-left: 100px;
-                padding: 5px;
-                font-size: 1px;
-                background-color: #000000;
-                text-align: "justify";
-                margin-top: 150px;
-            }
-
-            .r1 {
-                flex: 1;
-                background: linear-gradient(to bottom, #101828, #000000);
-                border-radius: 10px;
-                margin-top: 150px;
-                margin-right: 80px;
-            }
-
-            .bordered-button3 {
-
-                padding: 10px 15px;
-                background-color: #6d95fc;
-                border: 1px solid black;
-                color: #101828;
-                align-items: center;
-                margin-left: 150px;
-            }
-
-
-            /*footer*/
-            footer {
-                background: linear-gradient(to bottom, #000000, #090b13);
-                color: white;
-                padding: 20px 0;
-                text-align: center;
-            }
-
-            .footer-content {
-                max-width: 1200px;
-                margin: 0 auto;
-            }
-
-            .logo-container {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-bottom: 100px;
-            }
-
-            .logo-container img {
-                max-width: 100px;
-                margin: 0 10px;
-            }
-
-            .footer-text1 {
-                margin-top: 250px;
-                font-size: 45px;
-                margin-right: 13px;
-                color: #6d95fc;
-                font-family: 'poppins', sans-serif;
-            }
-
-            .footer-text2 {
-                margin-bottom: 10px;
-                font-size: 20px;
-                margin-right: 13px;
-                color: white;
-                font-family: 'poppins', sans-serif;
-            }
-
-            .footer-text3 {
-                margin-bottom: 40px;
-                font-size: 30px;
-                margin-right: 13px;
-                color: #6d95fc;
-                font-family: 'poppins', sans-serif;
-            }
-
-            .footer-text4 {
-
-                font-size: 20px;
-                margin-right: 13px;
-                color: white;
-                font-family: 'poppins', sans-serif;
-            }
-
-            .footer-text5 {
-                margin-bottom: 50px;
-                font-size: 20px;
-                margin-right: 13px;
-                color: white;
-                font-family: 'poppins', sans-serif;
-            }
-
-            .footer-text6 {
-                margin: 0;
-                font-size: 10px;
-                margin-right: 13px;
-                color: white;
-                font-family: 'poppins', sans-serif;
-            }
-
-            .line {
-
-                width: 100px;
-                display: inline-block;
-                margin-right: 5px;
-                color: white;
-                margin-bottom: 30px;
-                border: 1px solid white;
-            }
-
-            .logo-image {
-                width: 50px;
-                height: 50px;
-
-            }
-
-
+        .language-bar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin: 20px 0;
+        }
+
+        .hr {
+            width: 1220px;
+            height: 2px;
+            background-color: #7c7c7c;
+            margin: 20px 20px;
+
+        }
+
+        .language-options {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            gap: 20px;
+        }
+
+        .language-options button {
+            background: none;
+            border: none;
+            color: #333;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .footer-end {
+            color: #333;
+            background-color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .footer-links a {
+            color:#333;
+            text-decoration: none;
+        }
+
+        .copyright {
+            font-size: 14px;
         }
     </style>
+
 </head>
 
 <body>
 
-    <div class="navbar">
-        <div class="company-name">
-            <h1>
-                <b></b>
-                <p>CREATIC</p></b>
-                <p class="p2">CREATIVE AGENCY</p2>
-            </h1>
-        </div>
-        <div class="search-icon">
-            <a href="">
-                <img src="search_icon.png">
-            </a>
-        </div>
-        <a href="#service-6">Contact Us</a>
-        <a href="#service-3">Portfolio</a>
-        <a href="#service-4">Pages</a>
-        <a href="#service-2">Services</a>
-        <a href="#service-1">About Us</a>
-        <a href="">Home</a>
 
+    <div class="header">
+
+        <b>
+            <p class="hed">Visual Product </p>
+        </b>
+
+
+        <nav>
+            <ul>
+                <li><a class="navlink" href="#home">Home</a></li>
+                <li><a class="navlink" href="#about">About</a></li>
+                <li><a class="navlink" href="#services">Services</a></li>
+                <li><a class="navlink" href="#contact">Contact</a></li>
+                <li><a class="button" href="#contact">Get Started</a></li>
+
+            </ul>
+        </nav>
     </div>
 
-    <div class="page-info">
-        <div class="left-side">
-            <p class="p3"><span>WELCOME TO CREATIC</span></p3>
-            <p class="p4"><b>WE ARE A <span>CREATIVE</span></b></p4>
-            <p class="p4"><b>DESIGN AGENCY</b></p5>
-                <hr class="horizontal-line">
-                </hr>
-            <p class="p6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, ut labore et dolore</p6>
-            <p class="p6">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p6>
-            <p class="p6">Sunt in culpa qui officia deserunt mollit anim id est laborum</p6>
-            <p class="p5"><button class="bordered-button">GET IN TOUCH</button></p5>
-        </div>
-        <div class="right-side">
+    <div class="landing">
+        <div class="landing-text">
+            <h2>Product Management</h2>
+            <h2>SaaS: A Visual Guide</h2>
 
-            <img src="person1.png">
         </div>
-    </div>
+        <p class="p2">In today's digital age, effective product management is crucial for the</p>
+        <p class="p2">success of any software-as-a-service (SaaS) company.</p>
 
-    <div class="services-container" id="service-1">
-        <div class="image-container">
-            <img src="bot.png">
+        <div class="button-landing">
+            <a href="#button1" class="landing-button1">Get Started</a>
+            <a href="#button2" class="landing-button2">Talk to sales</a>
         </div>
-        <div class="text-container">
-            <p class="p3"><span>ABOUT US</span></p3>
-            <p class="p4"><b>We Bring <span>Creative</span> Ideas</b></p4>
-            <p class="p4"><b>To Life</b></p5>
-                <hr class="horizontal-line">
-                </hr>
-            <p class="love"><span>We Love Creating</span></p>
-            <p class="p6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, ut labore et dolore</p6>
-            <p class="p6">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p6>
-            <p class="p6">Sunt in culpa qui officia deserunt mollit anim id est laborum</p6>
-            <p class="p6"><button class="bordered-button">READ MORE</button></p5>
+
+        <div class="central-image">
+            <img class="landing-img" src="landing.png" alt="Central Image">
 
         </div>
     </div>
 
-    <div class="container" id="service-2">
-        <div class="text-container">
-            <p class="ps"><span>SERVICES</span></p3>
-            <p class="p4"><b>Experience The Power</b></p4>
-            <p class="p4">Of <span>Innovation</span></p>
-            <hr class="horizontal-line">
+
+    <div class="tag">
+        <img src="content.png">
+    </div>
+
+    <div class="service">
+        <div class="service-item">
+            <div class="service-icon">
+                <img src="ic1.png">
+            </div>
+            <p class="icon-text1"><b>Mobile App</b></p>
+            <p class="icon-text2">Lorem ipsum dolor sit amet consecte turole
+                adipiscing elit semper dalaracc lacus velolte facilisis
+                volutpat est velitolm.</p>
+        </div>
+        <div class="service-item">
+            <div class="service-icon">
+                <img src="ic2.png">
+            </div>
+            <p class="icon-text1"><b>Desktop App</b></p>
+            <p class="icon-text2">Lorem ipsum dolor sit amet consecte turole
+                adipiscing elit semper dalaracc lacus velolte facilisis
+                volutpat est velitolm.</p>
+        </div>
+        <div class="service-item">
+            <div class="service-icon">
+                <img src="ic3.png">
+            </div>
+            <p class="icon-text1"><b>Multiple Users</b></p>
+            <p class="icon-text2">Lorem ipsum dolor sit amet consecte turole
+                adipiscing elit semper dalaracc lacus velolte facilisis
+                volutpat est velitolm.</p>
+        </div>
+    </div>
+
+    <!-- Text and Image Container -->
+    <div class="text-image-container">
+        <div class="text">
+            <h2>A dedicated team to grow</h2>
+            <h2>your company</h2>
+            <p class="p3">Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit</p>
+            <p class="p3">aliquam sit nullam neque ultrices</p>
+
+            <div class="button-call">
+                <a href="#button1" class="landing-button1">Get Started</a>
+                <a href="#button2" class="landing-button2b">Talk to sales</a>
+            </div>
+        </div>
+        <img src="caller.png">
+
+    </div>
+
+    <!-- Image and Text Container (Reversed) -->
+    <div class="image-text-container">
+        <img src="reverse.png">
+        <!-- Replace 'your-image-path.jpg' with the actual path to your image -->
+        <div class="text">
+            <h2>A dedicated team to grow</h2>
+            <h2>your company</h2>
+            <p class="p3">Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit</p>
+            <p class="p3">aliquam sit nullam neque ultrices</p>
+
+            <div class="button-landing">
+                <a href="#button1" class="landing-button1">Get Started</a>
+                <a href="#button2" class="landing-button2">Talk to sales</a>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- Text and Image Container -->
+    <div class="text-image-container">
+        <div class="text">
+            <h2>A dedicated team to grow</h2>
+            <h2>your company</h2>
+            <p class="p3">Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit</p>
+            <p class="p3">aliquam sit nullam neque ultrices</p>
+
+            <div class="button-call">
+                <a href="#button1" class="landing-button1">Get Started</a>
+                <a href="#button2" class="landing-button2b">Talk to sales</a>
+            </div>
+        </div>
+        <img src="caller.png">
+
+    </div>
+
+    <!-- Image and Text Container (Reversed) -->
+    <div class="image-text-container">
+        <img src="worker.png">
+        <!-- Replace 'your-image-path.jpg' with the actual path to your image -->
+        <div class="text">
+            <h2>A dedicated team to grow</h2>
+            <h2>your company</h2>
+            <p class="p3">Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit</p>
+            <p class="p3">aliquam sit nullam neque ultrices</p>
+
+            <div class="button-landing">
+                <a href="#button1" class="landing-button1">Get Started</a>
+                <a href="#button2" class="landing-button2">Talk to sales</a>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- Text and Image Container -->
+    <div class="text-image-container">
+        <div class="text">
+            <h2>A dedicated team to grow</h2>
+            <h2>your company</h2>
+            <p class="p3">Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit</p>
+            <p class="p3">aliquam sit nullam neque ultrices</p>
+
+            <div class="button-call">
+                <a href="#button1" class="landing-button1">Get Started</a>
+                <a href="#button2" class="landing-button2b">Talk to sales</a>
+            </div>
+        </div>
+        <img src="infinity.png">
+
+    </div>
+
+    <div class="ending">
+        <div class="landing-text">
+            <h2>Product Management</h2>
+            <h2>SaaS: A Visual Guide</h2>
+
+        </div>
+        <p class="p2">In today's digital age, effective product management is crucial for the</p>
+        <p class="p2">success of any software-as-a-service (SaaS) company.</p>
+
+        <div class="button-landing">
+            <a href="#button1" class="landing-button1">Get Started</a>
+            <a href="#button2" class="landing-button2">Talk to sales</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="grid-container">
+            <div class="grid-item">
+                <h2>INTEGRATIONS</h2>
+                <ul>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Integrations</a></li>
+                    <li><a href="#">Affiliate Programs</a></li>
+                    <li><a href="#">Agency Partners</a></li>
+                </ul>
+            </div>
+            <div class="grid-item">
+                <h2>MARKETING</h2>
+                <ul>
+                    <li><a href="#">Entrepreneur</a></li>
+                    <li><a href="#">Online marketer</a></li>
+                    <li><a href="#">Marketing manager</a></li>
+                </ul>
+            </div>
+            <div class="grid-item">
+                <h2>HEAD</h2>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">API Docs</a></li>
+                </ul>
+            </div>
+            <div class="grid-item">
+                <h2>SOLUTIONS</h3>
+                    <ul>
+                        <li><a href="#">Entrepreneur</a></li>
+                        <li><a href="#">Online marketer</a></li>
+                        <li><a href="#">Marketing manager</a></li>
+                    </ul>
+            </div>
+            <div class="grid-item">
+                <h2>EDITORS</h2>
+                <ul>
+                    <li><a href="#">Entrepreneur</a></li>
+                    <li><a href="#">Online marketer</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <div class="language-bar">
+            <hr class="hr">
             </hr>
-            <p class="love"><span>We Love Creating</span></p>
-            <p class="p6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, ut labore et dolore</p6>
-            <p class="p6">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p6>
-            <p class="p6">Sunt in culpa qui officia deserunt mollit anim id est laborum</p6>
-            <p class="p6"><button class="bordered-button">VIEW ALL</button></p5>
+            <div class="language-options">
+                <button>English</button>
 
-        </div>
-        <div class="image-service">
-            <div class="image-box">
-                <img src="image1.png" alt="Image 1">
-                <p class="description">VIDEO MARKETING </p>
-                <p class="p6">Lorem ipsum dolor sit amet
-                <p>
+                <button>Français</button>
+                <button>Español</button>
             </div>
-            <div class="image-box">
-                <img src="image2.png" alt="Image 2">
-                <p class="description">GRAPHIC DESIGN </p>
-                <p class="p6">Lorem ipsum dolor sit amet
-                <p></p>
-            </div>
-            <div class="image-box">
-                <img src="image3.png" alt="Image 3">
-                <p class="description">UI/UX DESIGN </p>
-                <p class="p6">Lorem ipsum dolor sit amet
-                <p></p>
-            </div>
-            <div class="image-box">
-                <img src="image4.png" alt="Image 4">
-                <p class="description">WEBSITE DESIGN </p>
-                <p class="p6">Lorem ipsum dolor sit amet
-                <p></p>
-            </div>
-        </div>
-    </div>
-
-    <div class="stats-container">
-        <img class="stats-image" src="stats.png">
-    </div>
-
-
-    </div>
-    <div class="projects-container" id="service-3">
-        <div class="project-text">
-            <b>
-                <p class="p0">ENJOY OUR <span>LATEST</span></p>
-                <p class="p0">PROJECTS</p>
-            </b>
-
-            <p class="work">
-                <hr class="horizontal">
-                <span>OUR WORK</span>
-                <hr class="horizontal">
-            </p>
-
-        </div>
-        <div class="project-slider">
-            <div class="project-item2">
-                <img class="project-image" src="project1.jpeg">
-            </div>
-
-            <div class="project-item">
-                <img class="project-image" src="project3.jpg">
-            </div>
-            <div class="project-item3">
-                <img class="project-image" src="project2.jpg">
-            </div>
-        </div>
-
-        <div class="navigation-indicator">
-            <div class="indicator"></div>
-            <div class="indicator"></div>
-            <div class="indicator"></div>
-            <div class="indicator"></div>
-
-        </div>
-
-
-    </div>
-
-    <div class="Why" id="service-4">
-        <div class="left-">
-            <p class="p3"><span>WHY US?</span></p3>
-                <hr class="horizontal3">
-                </hr>
-            <p class="p4"><b>25 YEARS OF <span>EXPERIENCE</span></b></p>
-            <p class="p4"><b>AS A CREATIVE AGENCY</b></p>
-            <a href="#service-5">
-                <p class="p5" href="#service-5"><button class="bordered-button">READ MORE</button></p>
-            </a>
-        </div>
-        <div class="right-">
-
-            <p class="p6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, ut labore et dolore</p6>
-            <p class="p6">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p6>
-            <p class="p6">Sunt in culpa qui officia deserunt mollit anim id est laborum</p6>
-        </div>
-    </div>
-
-
-
-    <div class="containers" id="service-5">
-        <div class="one">
-            <img class="project-images" src="person2.png" alt="Person 2">
-        </div>
-
-        <div class="two">
-            <b>
-                <p class="mid-text">WHAT <span>OUR<span></p>
-                <p class="mid-text">CLIENTS SAY?</p>
-            </b>
-            <p>
-                <hr class="bar">
-                </hr>
-            </p>
-            <p class="mony">TESTIMONIALS</p>
-            <div class="image-space">
-                <img src="post1.png" alt="Center Image" class="center-image">
-            </div>
-            <p class="p5"><button class="bordered-button2">VIEW ALL TESTIMONIALS</button></p5>
-        </div>
-
-        <div class="three">
-            <img class="project-images" src="person3.png" alt="Person 3">
-        </div>
-    </div>
-
-
-    <div class="contact-container" id="service-6">
-        <div class="l1">
-            <p class="p4"><b>GET IN <span>TOUCH</span></b></p>
-            <hr class="horizontal-line">
+            <hr class="hr">
             </hr>
-            <p class="p6">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-            <p class="p6">Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
-            <p class="p6">Sunt in culpa qui officia deserunt mollit anim</p>
-            <div class="contact-info">
-                <div class="div-contact">
-                    <img class="contact-image" src="location.png">
-                    <div class="contact-text">
-                        <p class="pt2"><b>Office Address</b></p>
-                        <p class="pt"><a class="link" href="">98, Arca St, PR City, 33414, Indonesia</a></p>
-                    </div>
-                </div>
-                <div class="div-contact">
-                    <img class="contact-image" src="call.png">
-                    <div class="contact-text">
-                        <p class="pt2"><b>Call Us</b></p>
-                        <p class="pt"><a class="link" href="tel:+1234567891">(+BK) 123 456 7891</a></p>
-                    </div>
-                </div>
-                <div class="div-contact">
-                    <img class="contact-image" src="mail.png">
-                    <div class="contact-text">
-                        <p class="pt2"><b>Mail Us</b></p>
-                        <p class="pt"><a class="link" href="">info@creaticagency.com</a></p>
-                    </div>
-                </div>
+        </div>
+
+        <div class="footer-end">
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Security Information</a>
+                <a href="#">Integrations</a>
+            </div>
+            <div class="copyright">
+                copyright &copy; 2022
             </div>
         </div>
 
-        <div class="r1">
-            <form action="#" method="post">
-                <label for="name">YOUR NAME</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">YOUR EMAIL</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">YOUR MESSAGE</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-
-                <p class="p5"><button class="bordered-button3" input type="submit">SEND MESSAGE</button></p5>
-            </form>
-        </div>
     </div>
-
-    <footer>
-        <div class="footer-content">
-            <p class="footer-text1"><b>CREATIC</b></p>
-            <p class="footer-text2">CREATIVE AGENCY</p>
-            <hr class="line">
-            </hr>
-
-            <p class="footer-text3"><b>Categories&nbsp;&nbsp;&nbsp;&nbsp; About&nbsp;&nbsp;&nbsp;&nbsp;
-                    Services&nbsp;&nbsp;&nbsp;&nbsp; Portfolio&nbsp;&nbsp;&nbsp;&nbsp; Pages&nbsp;&nbsp;&nbsp;&nbsp;
-                    Support</b></p>
-            <p class="footer-text4">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-            <p class="footer-text5">duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-
-
-            <div class="logo-container">
-                <img class="logo-image" src="logo1.png" alt="Logo 1">
-                <img class="logo-image" src="logo2.png" alt="Logo 2">
-                <img class="logo-image" src="logo3.png" alt="Logo 3">
-                <img class="logo-image" src="logo4.png" alt="Logo 4">
-                <img class="logo-image" src="logo5.png" alt="Logo 5">
-                <img class="logo-image" src="logo6.png" alt="Logo 6">
-            </div>
-            <p class="footer-text6">Copyright &copy; 2003-2023 Creatic Agency All Rights Reserved</p>
-        </div>
-
-    </footer>
-    <script>
-        window.addEventListener('load', () => {
-            // Scroll the page to the top
-            window.scrollTo(0, 0);
-        });
-    </script>
 
 </body>
-
-
 
 </html>
