@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaaS Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        @media only screen and (max-width: 500px) {
+            body {
+                margin: 0;
+                font-family: 'Monsterrat', serif;
+            }
+
+            .header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px;
+                background-color: #ffffff;
+                width: 1440px;
+                height: 56px;
+            }
+
+            .hed {
+                font-family: 'Vollkorn', serif;
+                font-size: 10px;
+                color: #333;
+
+            }
+
+            nav {
+                text-align: center;
+                margin-right: 1103px;
+
+            }
+
+            nav ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            nav li {
+                display: inline-block;
+                margin-left: 20px;
+
+            }
+
+            nav a {
+                text-decoration: none;
+                color: #333;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 16px;
+            }
+
+            .button {
+
+                background-color: black;
+                color: white;
+                border: 7px solid black;
+            }
+
+            .landing {
+                padding: 20px;
+                background-color: black;
+                text-align: center;
+                color: white;
+
+            }
+
+            .ending {
+                padding: 20px;
+                background-color: black;
+                text-align: center;
+                color: white;
+                height: 280px;
+
+            }
+
+            .p2 {
+                text-align: center;
+                margin: 0px 0px;
+                font-weight: lighter;
+                font-size: 8px;
+            }
+
+            h2 {
+                margin-bottom: 0px;
+                margin-top: 0px;
+                font-weight: bold;
+                font-size: 12px;
+                margin-left: 0px;
+            }
+
+            .text-image-container h2 {
+
+                margin-bottom: 0px;
+                margin-top: 0px;
+                font-weight: bold;
+                font-size: 12px;
+                margin-left: 35px;
+
+            }
+
+            .landing-text {
+                margin-bottom: 10px;
+
+            }
+
+            .button-container {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 20px;
+            }
+
+            .button-call {
+                display: flex;
+                justify-content: left;
+                margin-bottom: 20px;
+            }
+
+            .landing-button1 {
+                margin-right: 8px;
+                background-color: black;
+                color: white;
+                padding: 19px 19px;
+                border: 1px solid white;
+                font-size: 8px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                margin-left: 20px;
+            }
+
+            .button-landing {
+                margin-top: 30px;
+            }
+
+            .landing-button2 {
+                margin-right: 10px;
+                background-color: white;
+                color: black;
+                padding: 10px 20px;
+                border: 1px solid white;
+                border-radius: 50px;
+                font-size: 8px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+            }
+
+            .landing-button2b {
+                margin-right: 10px;
+                background-color: white;
+                color: black;
+                padding: 14px 16px;
+                border: 1px solid black;
+                border-radius: 50px;
+                font-size: 16px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+            }
+
+            .central-image {
+                text-align: center;
+
+                height: 336px;
+            }
+
+            .central-image img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 10px;
+                margin-top: 20px;
+            }
+
+            .tag {
+                background-color: #ffffff;
+                text-align: center;
+
+            }
+
+            .tag img {
+                max-width: 100%;
+                height: auto;
+                margin-top: 20px;
+            }
+
+            .service {
+                background-color: #ffffff;
+
+                justify-content: space-around;
+                align-items: center;
+                padding: 50px 50px;
+
+            }
+
+            .service-item {
+                text-align: left;
+                margin-right: 8px;
+
+            }
+
+            .service-icon img {
+                max-width: 50px;
+                max-height: 50px;
+                margin-bottom: 1px;
+                margin-left: 150px;
+                margin-top: 20px;
+            }
+
+            .icon-text1 {
+                font-size: 7px;
+                margin-left: 150px;
+            }
+
+            .icon-text2 {
+                font-size: 8px;
+                margin-left: 5px;
+            }
+
+
+            .text-image-container {
+
+                align-items: center;
+                margin: 20px;
+
+            }
+
+            .text-image-container .text {
+                flex: 1;
+                margin-left: 111px;
+
+            }
+
+            .text-image-container img {
+                max-width: 40%;
+                height: auto;
+                border-radius: 69px;
+                margin-left: 114px;
+            }
+
+            .image-text-container {
+                background-color: black;
+
+                align-items: center;
+                /* Adjust margin as needed */
+                width: 100vw;
+                height: 428px;
+            }
+
+            .p3 {
+                font-size: 8px;
+                margin-left: -19px;
+            }
+
+            .image-text-container img {
+                max-width: 54%;
+                height: 27%;
+                border-radius: 10px;
+                margin-left: 135px;
+                margin-bottom: 20px;
+                margin-right: 11px;
+                margin-top: 62px;
+            }
+
+            .image-text-container h2 {
+                flex: 1;
+
+                color: white;
+                font-weight: bold;
+            }
+
+            .image-text-container .p3 {
+                flex: 1;
+
+                /* Adjust padding as needed */
+                color: white;
+                font-weight: lighter;
+            }
+
+            .footer {
+                Color: #333;
+
+                padding: 80px 8px;
+            }
+
+
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0px;
+            }
+
+            .grid-item {
+
+                text-align: left;
+                margin-left: 65px;
+            }
+
+            .grid-item li {
+                margin-bottom: 5px;
+                text-align: left;
+                width: fit-content;
+                padding-right: 10px;
+                padding-left: 0px;
+            }
+
+            .grid-item ul {
+                margin-top: 0px;
+                list-style: none;
+                text-align: left;
+                padding: 10px;
+            }
+
+            li a {
+                text-decoration: none;
+                color: #333;
+                font-size: 7px;
+                text-align: left;
+            }
+
+
+            .language-bar {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                margin: 20px 0;
+            }
+
+            .hr {
+                width: 1220px;
+                height: 2px;
+                background-color: #7c7c7c;
+                margin: 20px 20px;
+
+            }
+
+            .language-options {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                display: flex;
+                gap: 20px;
+            }
+
+            .language-options button {
+                background: none;
+                border: none;
+                color: #333;
+                font-size: 10px;
+                cursor: pointer;
+            }
+
+            .footer-end {
+                color: #333;
+                background-color: white;
+                padding: 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .footer-links {
+                display: flex;
+                gap: 20px;
+            }
+
+            .footer-links a {
+                color: #333;
+                text-decoration: none;
+                font-size: 10px;
+            }
+
+            .copyright {
+                font-size: 10px;
+            }
+
+            .text {
+                margin-left: 125px;
+                align-items: center;
+
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        @media only screen and (min-width: 501px) {
+
+            body {
+                margin: 0;
+                font-family: 'Montserrat', sans-serif;
+
+            }
+
+            .header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px;
+                background-color: #ffffff;
+                width: 1440px;
+                height: 56px;
+            }
+
+            .hed {
+                font-family: 'Vollkorn', serif;
+                margin-left: 200px;
+                font-size: 30px;
+                color: #333;
+
+            }
+
+            nav {
+                text-align: center;
+
+            }
+
+            nav ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            nav li {
+                display: inline-block;
+                margin-left: 20px;
+
+            }
+
+            nav a {
+                text-decoration: none;
+                color: #333;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 16px;
+            }
+
+            .button {
+
+                background-color: black;
+                color: white;
+                border: 15px solid black;
+            }
+
+            .landing {
+                padding: 20px;
+                background-color: black;
+                text-align: center;
+                color: white;
+
+            }
+
+            .ending {
+                padding: 20px;
+                background-color: black;
+                text-align: center;
+                color: white;
+                height: 280px;
+
+            }
+
+            .p2 {
+                text-align: center;
+                margin: 0px 0px;
+                font-weight: lighter;
+                font-size: 17px;
+            }
+
+            h2 {
+                margin-bottom: 0px;
+                margin-top: 0px;
+                font-weight: bold;
+                font-size: 30px;
+            }
+
+            .landing-text {
+                margin-bottom: 10px;
+
+            }
+
+            .button-container {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 20px;
+            }
+
+            .button-call {
+                display: flex;
+                justify-content: left;
+                margin-bottom: 20px;
+            }
+
+            .landing-button1 {
+                margin-right: 15px;
+                background-color: black;
+                color: white;
+                padding: 10px 20px;
+                border: 1px solid white;
+                font-size: 16px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+            }
+
+            .button-landing {
+                margin-top: 30px;
+            }
+
+            .landing-button2 {
+                margin-right: 10px;
+                background-color: white;
+                color: black;
+                padding: 10px 20px;
+                border: 1px solid white;
+                border-radius: 50px;
+                font-size: 16px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+            }
+
+            .landing-button2b {
+                margin-right: 10px;
+                background-color: white;
+                color: black;
+                padding: 10px 20px;
+                border: 1px solid black;
+                border-radius: 50px;
+                font-size: 16px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+            }
+
+            .central-image {
+                text-align: center;
+
+                height: 486px;
+            }
+
+            .central-image img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 10px;
+                margin-top: 20px;
+            }
+
+            .tag {
+                background-color: #ffffff;
+                text-align: center;
+
+            }
+
+            .tag img {
+                width: 100vw;
+                height: auto;
+                margin-top: 20px;
+            }
+
+            .service {
+                background-color: #ffffff;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding: 80px 50px;
+
+            }
+
+            .service-item {
+                text-align: left;
+                margin-right: 0px;
+                margin-left: 200px;
+            }
+
+            .service-icon img {
+                max-width: 50px;
+                max-height: 50px;
+                margin-bottom: 10px;
+            }
+
+            .text-image-container {
+                display: flex;
+                align-items: center;
+                margin: 20px;
+                /* Adjust margin as needed */
+            }
+
+            .text-image-container .text {
+                flex: 1;
+                margin-left: 200px;
+                /* Adjust padding as needed */
+            }
+
+            .text-image-container img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 10px;
+                margin-right: 100px;
+            }
+
+            .image-text-container {
+                background-color: black;
+                display: flex;
+                align-items: center;
+                /* Adjust margin as needed */
+                width: 100vw;
+                height: 700px;
+            }
+
+            .image-text-container img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 10px;
+                margin-left: 200px;
+                margin-right: 80px;
+            }
+
+            .image-text-container h2 {
+                flex: 1;
+
+                color: white;
+                font-weight: bold;
+            }
+
+            .image-text-container .p3 {
+                flex: 1;
+
+                /* Adjust padding as needed */
+                color: white;
+                font-weight: lighter;
+            }
+
+            .footer {
+                Color: #333;
+
+                padding: 80px 100px;
+            }
+
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                /* 5 columns with equal width */
+                gap: 20px;
+                /* Adjust the gap between columns as needed */
+            }
+
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                /* 5 columns with equal width */
+                gap: 20px;
+                /* Adjust the gap between columns as needed */
+            }
+
+            .grid-item {
+
+                text-align: left;
+            }
+
+            .grid-item li {
+                margin-bottom: 5px;
+                text-align: left;
+                width: fit-content;
+                padding-right: 10px;
+                padding-left: 0px;
+            }
+
+            .grid-item ul {
+                margin-top: 50px;
+                list-style: none;
+                text-align: left;
+                padding: 10px;
+            }
+
+            li a {
+                text-decoration: none;
+                color: #333;
+
+                text-align: left;
+            }
+
+
+            .language-bar {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                margin: 20px 0;
+            }
+
+            .hr {
+                width: 1220px;
+                height: 2px;
+                background-color: #7c7c7c;
+                margin: 20px 20px;
+
+            }
+
+            .language-options {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                display: flex;
+                gap: 20px;
+            }
+
+            .language-options button {
+                background: none;
+                border: none;
+                color: #333;
+                font-size: 16px;
+                cursor: pointer;
+            }
+
+            .footer-end {
+                color: #333;
+                background-color: white;
+                padding: 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 10px;
+            }
+
+            .footer-links {
+                display: flex;
+                gap: 20px;
+            }
+
+            .footer-links a {
+                color: #333;
+                text-decoration: none;
+                font-size: 14px;
+            }
+
+            .copyright {
+                font-size: 14px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="header">
+
+        <b>
+            <p class="hed">Visual Product </p>
+        </b>
+
+
+        <nav>
+            <ul>
+                <li><a class="navlink" href="#home">Home</a></li>
+                <li><a class="navlink" href="#about">About</a></li>
+                <li><a class="navlink" href="#services">Blog</a></li>
+                <li><a class="navlink" href="#contact">Contact</a></li>
+                <li><a class="button" href="#contact">Get Started</a></li>
+
+            </ul>
+        </nav>
+    </div>
+
+    <div class="landing">
+        <div class="landing-text">
+            <h2>Product Management</h2>
+            <h2>SaaS: A Visual Guide</h2>
+
+        </div>
+        <p class="p2">In today's digital age, effective product management is crucial for the</p>
+        <p class="p2">success of any software-as-a-service (SaaS) company.</p>
+
+        <div class="button-landing">
+            <a href="#button1" class="landing-button1">Get Started</a>
+            <a href="#button2" class="landing-button2">Talk to sales</a>
+        </div>
+
+        <div class="central-image">
+            <img class="landing-img" src="landing.png" alt="Central Image">
+
+        </div>
+    </div>
+
+
+    <div class="tag">
+        <img src="content.png">
+    </div>
+
+    <div class="service">
+        <div class="service-item">
+            <div class="service-icon">
+                <img src="ic1.png">
+            </div>
+            <p class="icon-text1"><b>Mobile App</b></p>
+            <p class="icon-text2">Lorem ipsum dolor sit amet consecte turole
+                adipiscing elit semper dalaracc lacus velolte facilisis
+                volutpat est velitolm.</p>
+        </div>
+        <div class="service-item">
+            <div class="service-icon">
+                <img src="ic2.png">
+            </div>
+            <p class="icon-text1"><b>Desktop App</b></p>
+            <p class="icon-text2">Lorem ipsum dolor sit amet consecte turole
+                adipiscing elit semper dalaracc lacus velolte facilisis
+                volutpat est velitolm.</p>
+        </div>
+        <div class="service-item">
+            <div class="service-icon">
+                <img src="ic3.png">
+            </div>
+            <p class="icon-text1"><b>Multiple Users</b></p>
+            <p class="icon-text2">Lorem ipsum dolor sit amet consecte turole
+                adipiscing elit semper dalaracc lacus velolte facilisis
+                volutpat est velitolm.</p>
+        </div>
+    </div>
+
+    <!-- Text and Image Container -->
+    <div class="text-image-container">
+        <div class="text">
+            <h2>A dedicated team to grow</h2>
+            <h2>your company</h2>
+            <p class="p3">Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit</p>
+            <p class="p3">aliquam sit nullam neque ultrices</p>
+
+            <div class="button-call">
+                <a href="#button1" class="landing-button1">Get Started</a>
+                <a href="#button2" class="landing-button2b">Talk to sales</a>
+            </div>
+        </div>
+        <img src="caller.png">
+
+    </div>
+
+    <!-- Image and Text Container (Reversed) -->
+    <div class="image-text-container">
+        <img src="reverse.png">
+        <!-- Replace 'your-image-path.jpg' with the actual path to your image -->
+        <div class="text">
+            <h2>A dedicated team to grow</h2>
+            <h2>your company</h2>
+            <p class="p3">Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit</p>
+            <p class="p3">aliquam sit nullam neque ultrices</p>
+
+            <div class="button-landing">
+                <a href="#button1" class="landing-button1">Get Started</a>
+                <a href="#button2" class="landing-button2">Talk to sales</a>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- Text and Image Container -->
+    <div class="text-image-container">
+        <div class="text">
+            <h2>A dedicated team to grow</h2>
+            <h2>your company</h2>
+            <p class="p3">Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit</p>
+            <p class="p3">aliquam sit nullam neque ultrices</p>
+
+            <div class="button-call">
+                <a href="#button1" class="landing-button1">Get Started</a>
+                <a href="#button2" class="landing-button2b">Talk to sales</a>
+            </div>
+        </div>
+        <img src="caller.png">
+
+    </div>
+
+    <!-- Image and Text Container (Reversed) -->
+    <div class="image-text-container">
+        <img src="worker.png">
+        <!-- Replace 'your-image-path.jpg' with the actual path to your image -->
+        <div class="text">
+            <h2>A dedicated team to grow</h2>
+            <h2>your company</h2>
+            <p class="p3">Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit</p>
+            <p class="p3">aliquam sit nullam neque ultrices</p>
+
+            <div class="button-landing">
+                <a href="#button1" class="landing-button1">Get Started</a>
+                <a href="#button2" class="landing-button2">Talk to sales</a>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- Text and Image Container -->
+    <div class="text-image-container">
+        <div class="text">
+            <h2>A dedicated team to grow</h2>
+            <h2>your company</h2>
+            <p class="p3">Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit</p>
+            <p class="p3">aliquam sit nullam neque ultrices</p>
+
+            <div class="button-call">
+                <a href="#button1" class="landing-button1">Get Started</a>
+                <a href="#button2" class="landing-button2b">Talk to sales</a>
+            </div>
+        </div>
+        <img src="infinity.png">
+
+    </div>
+
+    <div class="ending">
+        <div class="landing-text">
+            <h2>Product Management</h2>
+            <h2>SaaS: A Visual Guide</h2>
+
+        </div>
+        <p class="p2">In today's digital age, effective product management is crucial for the</p>
+        <p class="p2">success of any software-as-a-service (SaaS) company.</p>
+
+        <div class="button-landing">
+            <a href="#button1" class="landing-button1">Get Started</a>
+            <a href="#button2" class="landing-button2">Talk to sales</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="grid-container">
+            <div class="grid-item">
+                <h2>INTEGRATIONS</h2>
+                <ul>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Integrations</a></li>
+                    <li><a href="#">Affiliate Programs</a></li>
+                    <li><a href="#">Agency Partners</a></li>
+                </ul>
+            </div>
+            <div class="grid-item">
+                <h2>MARKETING</h2>
+                <ul>
+                    <li><a href="#">Entrepreneur</a></li>
+                    <li><a href="#">Online marketer</a></li>
+                    <li><a href="#">Marketing manager</a></li>
+                </ul>
+            </div>
+            <div class="grid-item">
+                <h2>HEAD</h2>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">API Docs</a></li>
+                </ul>
+            </div>
+            <div class="grid-item">
+                <h2>SOLUTIONS</h3>
+                    <ul>
+                        <li><a href="#">Entrepreneur</a></li>
+                        <li><a href="#">Online marketer</a></li>
+                        <li><a href="#">Marketing manager</a></li>
+                    </ul>
+            </div>
+            <div class="grid-item">
+                <h2>EDITORS</h2>
+                <ul>
+                    <li><a href="#">Entrepreneur</a></li>
+                    <li><a href="#">Online marketer</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <div class="language-bar">
+            <hr class="hr">
+            </hr>
+            <div class="language-options">
+                <button>English</button>
+
+                <button>Français</button>
+                <button>Español</button>
+            </div>
+            <hr class="hr">
+            </hr>
+        </div>
+
+        <div class="footer-end">
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Security Information</a>
+                <a href="#">Integrations</a>
+            </div>
+            <div class="copyright">
+                copyright &copy; 2022
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
